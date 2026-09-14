@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "source": "EURUSD primary-day events (2021-07-20)",
+  "n_events": 97952,
+  "fit_window_seconds": 86400.0,
+  "event_rate_per_second": 1.1337037037037037,
+  "composition_fractions": {
+    "bid_up_fraction": 0.24147541653054558,
+    "bid_down_fraction": 0.25697280300555375,
+    "ask_up_fraction": 0.2512761352499183,
+    "ask_down_fraction": 0.2502756452139824
+  },
+  "per_type_event_count": {
+    "bid_up": 23653,
+    "bid_down": 25171,
+    "ask_up": 24613,
+    "ask_down": 24515
+  },
+  "bid_ask_in_spread_ratio": null,
+  "bid_ask_in_spread_ratio_unavailability_reason": "EURUSD events parquet exposes the four-type FX top-of-book alphabet only; in-spread vs top-of-book limit moves collapse into the same FX event-type code and cannot be disentangled from the cached events. Estimator falls back to symmetric (1:1) as the mu rebalance target.",
+  "spread_diagnostics": null,
+  "spread_diagnostics_unavailability_reason": "Source parquet columns (`timestamp`, `event_type`) do not carry a per-event bid / ask price; spread / mid reconstruction would require a join against full LOB-state columns. Not needed for the 07b plausibility band; recorded as null.",
+  "mid_diagnostics": null,
+  "mid_diagnostics_unavailability_reason": "Same reason as spread_diagnostics: source parquet does not carry per-event mid in the loaded columns.",
+  "data_provenance": {
+    "source_parquet": "<external-data>/EURUSD/eurusd_events.parquet",
+    "primary_day_utc": "2021-07-20",
+    "jitter_scheme": "random_ms",
+    "jitter_seed": 20210720,
+    "column_convention": [
+      "bid_up",
+      "bid_down",
+      "ask_up",
+      "ask_down"
+    ],
+    "filter": "event_type in {bid_up, bid_down, ask_up, ask_down}",
+    "sort_kind": "stable"
+  },
+  "cache_timestamp": "2026-05-09T21:14:31Z"
+}

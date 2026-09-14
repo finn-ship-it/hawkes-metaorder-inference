@@ -1,0 +1,129 @@
+{
+  "envelope_schema_version": "1",
+  "description": "Empirical envelope for FX top-of-book observables used by the D1 comparison layer. All fields are provisional placeholders until real FX quote data is integrated into the repository. The targets are calibrated against the default first-milestone configuration so that a compliant simulator run is expected to pass or warn rather than fail; they are not derived from measured market microstructure.",
+  "notes": [
+    "Placeholders marked with placeholder=true must be replaced with empirical values once real FX quote data becomes available. Until then this file exists to exercise the comparison pipeline end-to-end.",
+    "Field keys are dotted paths into summary.json (for example, observation.final_spread_ticks resolves summary['observation']['final_spread_ticks']).",
+    "Each field may specify any subset of warn_abs, fail_abs, warn_rel, fail_rel under 'tolerance'. A field without any tolerance is reported with status='unchecked'.",
+    "An endogeneity / branching-proxy field is not yet populated. Once a baseline-vs-total-rate diagnostic is added to summary.json it will be added here as a first-class check."
+  ],
+  "fields": {
+    "latent.total_rate": {
+      "target": 2.7,
+      "tolerance": {
+        "warn_rel": 0.3,
+        "fail_rel": 0.6
+      },
+      "placeholder": true,
+      "notes": "Expected total event rate across all four components, in events per second. Calibrated against the first-milestone default (mu = 0.5 per component, exponential kernel, spectral radius ~0.2)."
+    },
+    "latent.rates_by_event_type": {
+      "target": [0.7, 0.7, 0.7, 0.7],
+      "tolerance": {
+        "warn_rel": 0.4,
+        "fail_rel": 0.7
+      },
+      "placeholder": true,
+      "notes": "Per-component rates; identical across components under the symmetric first-milestone configuration. Loosened relative to the total-rate tolerance to accommodate single-run sampling noise at short horizons."
+    },
+    "observation.num_crossed_observations": {
+      "target": 0,
+      "tolerance": {
+        "warn_abs": 0,
+        "fail_abs": 0
+      },
+      "placeholder": false,
+      "notes": "A hard invariant enforced by the censor policy. Any non-zero value indicates a regression in the observation operator."
+    },
+    "observation.censoring_fraction": {
+      "target": 0.05,
+      "tolerance": {
+        "warn_abs": 0.05,
+        "fail_abs": 0.15
+      },
+      "placeholder": true,
+      "notes": "Fraction of latent events censored by the minimum-spread invariant. Calibrated against the default configuration; real FX data will require recalibration once an empirical censoring rate is available."
+    },
+    "observation.final_spread_ticks": {
+      "target": 2,
+      "tolerance": {
+        "warn_abs": 4,
+        "fail_abs": 10
+      },
+      "placeholder": true,
+      "notes": "Weak path-dependent placeholder. The terminal spread is a single sample of an integer-valued reflecting random walk on {-1, 0, +1} steps, censored at min_spread_ticks = 1; the prompt-01 controlled sweep on first_milestone fitted final_spread_ticks ~ N_obs^0.28 (R^2 = 0.99), well below the unrestricted-random-walk exponent 0.5. The reflecting barrier (the censor policy) suppresses the lower tail and induces a state-dependent restoring drift; the field is therefore sub-diffusive but still horizon-dependent. Prefer the spread-distribution fields below for plausibility checks. The numerical target and tolerances on this field are placeholder and were calibrated for the first-milestone default (T = 60 s, N_obs ~ 143). See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.spread_mean_ticks": {
+      "target": 5.0,
+      "tolerance": {
+        "warn_abs": 5.0,
+        "fail_abs": 15.0
+      },
+      "placeholder": true,
+      "notes": "Time-stamp-weighted mean of observation.spread_ticks over all admitted events. Sub-diffusive in N_obs under the current observation operator: prompt-01 fit gave spread_mean_ticks ~ N_obs^0.29 (R^2 = 0.98) on first_milestone over T in {30, 60, 120, 240, 480}. The reflecting-barrier mechanism (censor policy at min_spread_ticks = 1) provides partial mean reversion, so the field is more stable than final_spread_ticks but still grows slowly with horizon. The placeholder target was calibrated for T = 60; longer-horizon configurations will systematically exceed it. Awaiting empirical FX calibration. See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.spread_median_ticks": {
+      "target": 4.0,
+      "tolerance": {
+        "warn_abs": 4.0,
+        "fail_abs": 12.0
+      },
+      "placeholder": true,
+      "notes": "Median post-event spread across admitted observations. Sub-diffusive in N_obs (prompt-01 fit: spread_median_ticks ~ N_obs^0.28, R^2 = 0.96). Same horizon-dependence caveat as spread_mean_ticks. Placeholder target calibrated for T = 60. See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.spread_p90_ticks": {
+      "target": 10.0,
+      "tolerance": {
+        "warn_abs": 10.0,
+        "fail_abs": 25.0
+      },
+      "placeholder": true,
+      "notes": "90th-percentile post-event spread across admitted observations. Sub-diffusive in N_obs with a slightly higher exponent than the bulk (prompt-01 fit: spread_p90_ticks ~ N_obs^0.32, R^2 = 0.996). The upper tail is less protected by the lower reflecting barrier and therefore grows marginally faster. Placeholder target calibrated for T = 60. See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.spread_p99_ticks": {
+      "target": 18.0,
+      "tolerance": {
+        "warn_abs": 18.0,
+        "fail_abs": 40.0
+      },
+      "placeholder": true,
+      "notes": "99th-percentile post-event spread across admitted observations. Sub-diffusive (prompt-01 fit: spread_p99_ticks ~ N_obs^0.34, R^2 = 0.998). Tail-sensitive; expect the largest absolute drift in long-horizon configurations. Placeholder target calibrated for T = 60. See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.spread_max_ticks": {
+      "target": 25.0,
+      "tolerance": {
+        "warn_abs": 25.0,
+        "fail_abs": 60.0
+      },
+      "placeholder": true,
+      "notes": "Maximum post-event spread observed in the run. Sub-diffusive (prompt-01 fit: spread_max_ticks ~ N_obs^0.35, R^2 = 0.998) with the highest exponent in the spread family because extremes are insensitive to the reflecting barrier. Placeholder target calibrated for T = 60; long horizons inflate the maximum proportionally. See My repo/docs md/spread_scaling_diagnostic.md."
+    },
+    "observation.interarrival_mean_by_event_type": {
+      "target": [1.4, 1.4, 1.4, 1.4],
+      "tolerance": {
+        "warn_rel": 0.5,
+        "fail_rel": 1.0
+      },
+      "placeholder": true,
+      "notes": "Per-component inter-arrival mean on the observed stream, in seconds. Element-wise comparison; null elements in the actual (fewer than two observations of a component) are flagged as unchecked."
+    },
+    "observation.interarrival_variance_by_event_type": {
+      "target": [2.0, 2.0, 2.0, 2.0],
+      "tolerance": {
+        "warn_rel": 1.0,
+        "fail_rel": 2.0
+      },
+      "placeholder": true,
+      "notes": "Per-component inter-arrival population variance on the observed stream. Looser than the mean because variance estimators are noisier at small sample sizes."
+    },
+    "endogeneity.spectral_radius": {
+      "target": 0.2,
+      "tolerance": {
+        "warn_abs": 0.15,
+        "fail_abs": 0.5
+      },
+      "placeholder": true,
+      "notes": "Spectral radius of the branching matrix Phi (for the exponential kernel, Phi_ij = alpha_ij / beta_ij). Reports the configuration-level endogeneity, independent of any single run's sampling noise. Calibrated against the first-milestone default (spectral radius 0.2); a measured FX endogeneity ratio will replace this once real data is integrated."
+    }
+  }
+}

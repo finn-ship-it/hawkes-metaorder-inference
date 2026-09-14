@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Hawkes Meta-Order Inference"
+type: software
+version: "msc-submission-2026"
+date-released: "2026-09-14"
+authors:
+  - family-names: "Smith"
+    given-names: "Finn"
+repository-code: "https://github.com/finn-ship-it/hawkes-metaorder-inference"

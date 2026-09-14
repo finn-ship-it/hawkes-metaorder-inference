@@ -1,0 +1,105 @@
+{
+  "artifact": "eurusd_layer1_em_residual_diagnostics",
+  "description": "Multivariate time-rescaling-theorem residual diagnostics for the 2021-07-20 EUR/USD four-type EM-converged sum-of-exponentials Hawkes fit (the dissertation's empirical anchor). NEW diagnostics on the EXISTING fit/data; alpha_all reconstructed by re-running the deterministic EM fit and gated against the pinned anchor.",
+  "method": "time_rescaling_theorem_consecutive_same_type_increments_vs_Exp1",
+  "primary_date": "2021-07-20",
+  "fit_window_seconds": 86400.0,
+  "betas_grid_per_s": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "event_types": [
+    "bid_up",
+    "bid_down",
+    "ask_up",
+    "ask_down"
+  ],
+  "jitter_seed": 20210720,
+  "reconstruction_anchor_check": {
+    "pinned": {
+      "rho_spec": 0.937308200001031,
+      "log_likelihood": -64922.718170694534,
+      "n_events": 97952,
+      "n_iter": 516,
+      "converged_reason": "tol"
+    },
+    "reconstructed": {
+      "rho_spec": 0.937308200001031,
+      "log_likelihood": -64922.718170694534,
+      "n_events": 97952,
+      "n_iter": 516,
+      "converged_reason": "tol"
+    },
+    "rho_drift": 0.0,
+    "ll_drift": 0.0,
+    "passed": true
+  },
+  "per_type": {
+    "bid_up": {
+      "count": 23652,
+      "mean": 0.9999767511986389,
+      "variance": 0.703489398047905,
+      "median": 0.7702209977060193,
+      "ks_statistic": 0.18336025663917455,
+      "ks_pvalue": 0.0,
+      "left_tail_threshold": 0.1,
+      "left_tail_observed_frac": 0.05365296803652968,
+      "left_tail_expected_frac": 0.09516258196404048,
+      "compensator_total": 23652.401250923176,
+      "n_events_type": 23653
+    },
+    "bid_down": {
+      "count": 25170,
+      "mean": 0.9999379656240023,
+      "variance": 0.7368152883296416,
+      "median": 0.7689664974186599,
+      "ks_statistic": 0.18640913730804565,
+      "ks_pvalue": 0.0,
+      "left_tail_threshold": 0.1,
+      "left_tail_observed_frac": 0.04922526817640048,
+      "left_tail_expected_frac": 0.09516258196404048,
+      "compensator_total": 25170.67175955536,
+      "n_events_type": 25171
+    },
+    "ask_up": {
+      "count": 24612,
+      "mean": 0.9999817188932512,
+      "variance": 0.6444331896130658,
+      "median": 0.762939820698648,
+      "ks_statistic": 0.18790655993306474,
+      "ks_pvalue": 0.0,
+      "left_tail_threshold": 0.1,
+      "left_tail_observed_frac": 0.04664391353811149,
+      "left_tail_expected_frac": 0.09516258196404048,
+      "compensator_total": 24612.353578038445,
+      "n_events_type": 24613
+    },
+    "ask_down": {
+      "count": 24514,
+      "mean": 0.9999789899681144,
+      "variance": 0.6513758410255173,
+      "median": 0.782039530644397,
+      "ks_statistic": 0.17934404262917755,
+      "ks_pvalue": 0.0,
+      "left_tail_threshold": 0.1,
+      "left_tail_observed_frac": 0.05674308558374806,
+      "left_tail_expected_frac": 0.09516258196404048,
+      "compensator_total": 24513.502644526718,
+      "n_events_type": 24515
+    }
+  },
+  "pooled": {
+    "count": 97948,
+    "mean": 0.9999685929226263,
+    "variance": 0.6841501321929231,
+    "median": 0.7709551671068766,
+    "ks_statistic": 0.18267703325145646,
+    "ks_pvalue": 0.0,
+    "left_tail_threshold": 0.1,
+    "left_tail_observed_frac": 0.05152734103810185,
+    "left_tail_expected_frac": 0.09516258196404048
+  },
+  "interpretation_caveats": "Residuals are consecutive same-type compensator increments; the first interval [0, first event] and the final interval [last event, T] are excluded, so each type contributes (count_i - 1) residuals. KS is against Exp(1) with fixed loc=0, scale=1 (no parameters estimated from the residuals). HistData millisecond timestamp aggregation and the random sub-millisecond tie-break distort the extreme left tail (shortest inter-event times), so small-residual departures are partly a data-resolution artefact, consistent with Rambaldi-Pennesi-Lillo (2015) FX Hawkes diagnostics. Reported as a diagnostic check, not a pass/fail certification."
+}

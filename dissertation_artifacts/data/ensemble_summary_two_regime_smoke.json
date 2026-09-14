@@ -1,0 +1,1189 @@
+{
+  "ensemble_schema_version": "1",
+  "ensemble_timestamp_utc": "two_regime_smoke_50seeds",
+  "num_members": 50,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "member_run_dirs": [
+    "two_regime_smoke_50seeds_1",
+    "two_regime_smoke_50seeds_2",
+    "two_regime_smoke_50seeds_3",
+    "two_regime_smoke_50seeds_4",
+    "two_regime_smoke_50seeds_5",
+    "two_regime_smoke_50seeds_6",
+    "two_regime_smoke_50seeds_7",
+    "two_regime_smoke_50seeds_8",
+    "two_regime_smoke_50seeds_9",
+    "two_regime_smoke_50seeds_10",
+    "two_regime_smoke_50seeds_11",
+    "two_regime_smoke_50seeds_12",
+    "two_regime_smoke_50seeds_13",
+    "two_regime_smoke_50seeds_14",
+    "two_regime_smoke_50seeds_15",
+    "two_regime_smoke_50seeds_16",
+    "two_regime_smoke_50seeds_17",
+    "two_regime_smoke_50seeds_18",
+    "two_regime_smoke_50seeds_19",
+    "two_regime_smoke_50seeds_20",
+    "two_regime_smoke_50seeds_21",
+    "two_regime_smoke_50seeds_22",
+    "two_regime_smoke_50seeds_23",
+    "two_regime_smoke_50seeds_24",
+    "two_regime_smoke_50seeds_25",
+    "two_regime_smoke_50seeds_26",
+    "two_regime_smoke_50seeds_27",
+    "two_regime_smoke_50seeds_28",
+    "two_regime_smoke_50seeds_29",
+    "two_regime_smoke_50seeds_30",
+    "two_regime_smoke_50seeds_31",
+    "two_regime_smoke_50seeds_32",
+    "two_regime_smoke_50seeds_33",
+    "two_regime_smoke_50seeds_34",
+    "two_regime_smoke_50seeds_35",
+    "two_regime_smoke_50seeds_36",
+    "two_regime_smoke_50seeds_37",
+    "two_regime_smoke_50seeds_38",
+    "two_regime_smoke_50seeds_39",
+    "two_regime_smoke_50seeds_40",
+    "two_regime_smoke_50seeds_41",
+    "two_regime_smoke_50seeds_42",
+    "two_regime_smoke_50seeds_43",
+    "two_regime_smoke_50seeds_44",
+    "two_regime_smoke_50seeds_45",
+    "two_regime_smoke_50seeds_46",
+    "two_regime_smoke_50seeds_47",
+    "two_regime_smoke_50seeds_48",
+    "two_regime_smoke_50seeds_49",
+    "two_regime_smoke_50seeds_50"
+  ],
+  "observation_enabled": true,
+  "comparison_requested": true,
+  "envelope_path": "targets/real_fx_envelope.json",
+  "comparison_summary": {
+    "pass": 0,
+    "warn": 5,
+    "fail": 45,
+    "missing": 0,
+    "unchecked": 0
+  },
+  "comparison_statuses": [
+    {
+      "seed": 1,
+      "run_dir": "two_regime_smoke_50seeds_1",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 5,
+        "warn": 3,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 2,
+      "run_dir": "two_regime_smoke_50seeds_2",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 10,
+        "warn": 2,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 3,
+      "run_dir": "two_regime_smoke_50seeds_3",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 4,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 4,
+      "run_dir": "two_regime_smoke_50seeds_4",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 5,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 5,
+      "run_dir": "two_regime_smoke_50seeds_5",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 6,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 6,
+      "run_dir": "two_regime_smoke_50seeds_6",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 7,
+      "run_dir": "two_regime_smoke_50seeds_7",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 3,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 8,
+      "run_dir": "two_regime_smoke_50seeds_8",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 1,
+        "fail": 6,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 9,
+      "run_dir": "two_regime_smoke_50seeds_9",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 3,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 10,
+      "run_dir": "two_regime_smoke_50seeds_10",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 11,
+      "run_dir": "two_regime_smoke_50seeds_11",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 4,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 12,
+      "run_dir": "two_regime_smoke_50seeds_12",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 7,
+        "warn": 6,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 13,
+      "run_dir": "two_regime_smoke_50seeds_13",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 3,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 14,
+      "run_dir": "two_regime_smoke_50seeds_14",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 15,
+      "run_dir": "two_regime_smoke_50seeds_15",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 16,
+      "run_dir": "two_regime_smoke_50seeds_16",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 17,
+      "run_dir": "two_regime_smoke_50seeds_17",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 4,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 18,
+      "run_dir": "two_regime_smoke_50seeds_18",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 4,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 19,
+      "run_dir": "two_regime_smoke_50seeds_19",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 20,
+      "run_dir": "two_regime_smoke_50seeds_20",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 5,
+        "warn": 3,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 21,
+      "run_dir": "two_regime_smoke_50seeds_21",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 5,
+        "warn": 3,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 22,
+      "run_dir": "two_regime_smoke_50seeds_22",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 1,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 23,
+      "run_dir": "two_regime_smoke_50seeds_23",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 2,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 24,
+      "run_dir": "two_regime_smoke_50seeds_24",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 5,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 25,
+      "run_dir": "two_regime_smoke_50seeds_25",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 4,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 26,
+      "run_dir": "two_regime_smoke_50seeds_26",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 11,
+        "warn": 1,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 27,
+      "run_dir": "two_regime_smoke_50seeds_27",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 1,
+        "fail": 6,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 28,
+      "run_dir": "two_regime_smoke_50seeds_28",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 29,
+      "run_dir": "two_regime_smoke_50seeds_29",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 8,
+        "warn": 5,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 30,
+      "run_dir": "two_regime_smoke_50seeds_30",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 3,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 31,
+      "run_dir": "two_regime_smoke_50seeds_31",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 2,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 32,
+      "run_dir": "two_regime_smoke_50seeds_32",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 3,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 33,
+      "run_dir": "two_regime_smoke_50seeds_33",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 3,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 34,
+      "run_dir": "two_regime_smoke_50seeds_34",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 35,
+      "run_dir": "two_regime_smoke_50seeds_35",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 4,
+        "fail": 3,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 36,
+      "run_dir": "two_regime_smoke_50seeds_36",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 37,
+      "run_dir": "two_regime_smoke_50seeds_37",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 1,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 38,
+      "run_dir": "two_regime_smoke_50seeds_38",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 3,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 39,
+      "run_dir": "two_regime_smoke_50seeds_39",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 5,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 40,
+      "run_dir": "two_regime_smoke_50seeds_40",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 3,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 41,
+      "run_dir": "two_regime_smoke_50seeds_41",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 1,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 42,
+      "run_dir": "two_regime_smoke_50seeds_42",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 3,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 43,
+      "run_dir": "two_regime_smoke_50seeds_43",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 44,
+      "run_dir": "two_regime_smoke_50seeds_44",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 3,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 45,
+      "run_dir": "two_regime_smoke_50seeds_45",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 46,
+      "run_dir": "two_regime_smoke_50seeds_46",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 47,
+      "run_dir": "two_regime_smoke_50seeds_47",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 4,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 48,
+      "run_dir": "two_regime_smoke_50seeds_48",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 49,
+      "run_dir": "two_regime_smoke_50seeds_49",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 10,
+        "warn": 3,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 50,
+      "run_dir": "two_regime_smoke_50seeds_50",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 2,
+        "fail": 5,
+        "missing": 0,
+        "unchecked": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "horizon": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 600.0,
+      "std": 0.0,
+      "min": 600.0,
+      "max": 600.0
+    },
+    "seed": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 25.5,
+      "std": 14.430869689661812,
+      "min": 1.0,
+      "max": 50.0
+    },
+    "dimension": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 4.0,
+      "std": 0.0,
+      "min": 4.0,
+      "max": 4.0
+    },
+    "latent.num_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2031.54,
+      "std": 179.35821252454542,
+      "min": 1695.0,
+      "max": 2519.0
+    },
+    "latent.counts_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 508.72,
+          "std": 48.84016379988912,
+          "min": 426.0,
+          "max": 623.0
+        },
+        {
+          "n": 50,
+          "mean": 508.48,
+          "std": 48.690138631965304,
+          "min": 423.0,
+          "max": 624.0
+        },
+        {
+          "n": 50,
+          "mean": 506.54,
+          "std": 44.83490158347624,
+          "min": 417.0,
+          "max": 599.0
+        },
+        {
+          "n": 50,
+          "mean": 507.8,
+          "std": 53.46026561849464,
+          "min": 385.0,
+          "max": 673.0
+        }
+      ]
+    },
+    "latent.rates_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 0.8478666666666667,
+          "std": 0.0814002729998152,
+          "min": 0.71,
+          "max": 1.0383333333333333
+        },
+        {
+          "n": 50,
+          "mean": 0.8474666666666667,
+          "std": 0.08115023105327551,
+          "min": 0.705,
+          "max": 1.04
+        },
+        {
+          "n": 50,
+          "mean": 0.8442333333333333,
+          "std": 0.0747248359724604,
+          "min": 0.695,
+          "max": 0.9983333333333333
+        },
+        {
+          "n": 50,
+          "mean": 0.8463333333333333,
+          "std": 0.08910044269749105,
+          "min": 0.6416666666666667,
+          "max": 1.1216666666666666
+        }
+      ]
+    },
+    "latent.total_rate": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 3.3859000000000004,
+      "std": 0.2989303542075757,
+      "min": 2.825,
+      "max": 4.198333333333333
+    },
+    "latent.acceptance_ratio": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.9012108862201318,
+      "std": 0.006556946747137271,
+      "min": 0.8900279589934762,
+      "max": 0.9169054441260746
+    },
+    "latent.num_proposals": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2253.76,
+      "std": 192.8195591738556,
+      "min": 1890.0,
+      "max": 2783.0
+    },
+    "latent.num_acceptances": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2031.54,
+      "std": 179.35821252454542,
+      "min": 1695.0,
+      "max": 2519.0
+    },
+    "regime.num_regimes": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "regime.num_regime_jumps": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 80.2,
+      "std": 8.158431221748456,
+      "min": 62.0,
+      "max": 99.0
+    },
+    "regime.time_in_regime": {
+      "kind": "list",
+      "length": 2,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 408.8017715473667,
+          "std": 26.66198281949988,
+          "min": 360.4877386891124,
+          "max": 456.53357693821334
+        },
+        {
+          "n": 50,
+          "mean": 191.19822845263332,
+          "std": 26.66198281949988,
+          "min": 143.4664230617867,
+          "max": 239.5122613108876
+        }
+      ]
+    },
+    "regime.time_fraction_by_regime": {
+      "kind": "list",
+      "length": 2,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 0.6813362859122778,
+          "std": 0.044436638032499816,
+          "min": 0.6008128978151873,
+          "max": 0.7608892948970223
+        },
+        {
+          "n": 50,
+          "mean": 0.31866371408772226,
+          "std": 0.0444366380324998,
+          "min": 0.23911070510297786,
+          "max": 0.3991871021848127
+        }
+      ]
+    },
+    "meta_order.num_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "meta_order.time_inside_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "meta_order.time_fraction_inside_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "observation.num_latent_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2031.54,
+      "std": 179.35821252454542,
+      "min": 1695.0,
+      "max": 2519.0
+    },
+    "observation.num_observed_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 1993.1,
+      "std": 172.04316318877656,
+      "min": 1646.0,
+      "max": 2427.0
+    },
+    "observation.num_censored_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 38.44,
+      "std": 28.804971793077666,
+      "min": 0.0,
+      "max": 99.0
+    },
+    "observation.censoring_fraction": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.018685135364544248,
+      "std": 0.013348347301679301,
+      "min": 0.0,
+      "max": 0.04775687409551375
+    },
+    "observation.num_crossed_observations": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "observation.counts_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 489.9,
+          "std": 44.12901539803488,
+          "min": 400.0,
+          "max": 577.0
+        },
+        {
+          "n": 50,
+          "mean": 508.48,
+          "std": 48.690138631965304,
+          "min": 423.0,
+          "max": 624.0
+        },
+        {
+          "n": 50,
+          "mean": 506.54,
+          "std": 44.83490158347624,
+          "min": 417.0,
+          "max": 599.0
+        },
+        {
+          "n": 50,
+          "mean": 488.18,
+          "std": 48.776506639979864,
+          "min": 364.0,
+          "max": 627.0
+        }
+      ]
+    },
+    "observation.interarrival_mean_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 1.2249060456067826,
+          "std": 0.11080039142964121,
+          "min": 1.038348643907937,
+          "max": 1.4931003431740053
+        },
+        {
+          "n": 50,
+          "mean": 1.1840386000031944,
+          "std": 0.11310582065919851,
+          "min": 0.9597682412440214,
+          "max": 1.4202666201684169
+        },
+        {
+          "n": 50,
+          "mean": 1.1881345446156004,
+          "std": 0.10759065378072497,
+          "min": 0.9931221878536037,
+          "max": 1.4395885986889327
+        },
+        {
+          "n": 50,
+          "mean": 1.2324356815687405,
+          "std": 0.12068224911081268,
+          "min": 0.9476283212588716,
+          "max": 1.6177188326656016
+        }
+      ]
+    },
+    "observation.interarrival_variance_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 3.296915590440687,
+          "std": 0.6452867080933309,
+          "min": 2.2105483494248745,
+          "max": 5.106446565373281
+        },
+        {
+          "n": 50,
+          "mean": 3.0503669790184564,
+          "std": 0.6162873651535191,
+          "min": 1.8585516828805242,
+          "max": 4.366292514445771
+        },
+        {
+          "n": 50,
+          "mean": 3.0485225982617385,
+          "std": 0.6431178218574622,
+          "min": 2.0843374174053753,
+          "max": 4.66737518858463
+        },
+        {
+          "n": 50,
+          "mean": 3.2259656128351804,
+          "std": 0.6414986936621682,
+          "min": 2.1621461589400135,
+          "max": 4.710864906967566
+        }
+      ]
+    },
+    "observation.final_bid_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": -18.58,
+      "std": 30.743513136920445,
+      "min": -89.0,
+      "max": 60.0
+    },
+    "observation.final_ask_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 19.36,
+      "std": 29.462355642412575,
+      "min": -37.0,
+      "max": 88.0
+    },
+    "observation.final_mid_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.39,
+      "std": 27.06146522271106,
+      "min": -50.0,
+      "max": 65.0
+    },
+    "observation.final_spread_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 37.94,
+      "std": 26.402583206951547,
+      "min": 1.0,
+      "max": 112.0
+    },
+    "observation.spread_mean_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 23.16169513055421,
+      "std": 12.268235634709526,
+      "min": 7.435991605456453,
+      "max": 75.06593406593407
+    },
+    "observation.spread_median_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 21.48,
+      "std": 14.386438058115708,
+      "min": 7.0,
+      "max": 89.0
+    },
+    "observation.spread_p90_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 43.826,
+      "std": 20.619939961115303,
+      "min": 13.0,
+      "max": 127.0
+    },
+    "observation.spread_p99_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 52.5574,
+      "std": 20.83417459944118,
+      "min": 16.950000000000045,
+      "max": 133.0
+    },
+    "observation.spread_max_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 55.7,
+      "std": 21.225691979297167,
+      "min": 18.0,
+      "max": 136.0
+    },
+    "observation.min_spread_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "endogeneity.spectral_radius": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.19999999999999993,
+      "std": 2.7755575615628914e-17,
+      "min": 0.19999999999999996,
+      "max": 0.19999999999999996
+    },
+    "endogeneity.total_baseline_rate": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2.7295858276210665,
+      "std": 0.21329586255599906,
+      "min": 2.3477313844942937,
+      "max": 3.116098090487101
+    },
+    "endogeneity.rate_based_proxy": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.19283724870500255,
+      "std": 0.024273888347268742,
+      "min": 0.14961139756842967,
+      "max": 0.25777735041990446
+    }
+  },
+  "skipped_fields": {
+    "summary_schema_version": "non-numeric scalar (string)",
+    "meta_order.time_fraction_by_window": "list fields are empty",
+    "observation.present": "non-numeric scalar (bool)",
+    "observation.crossing_policy": "non-numeric scalar (string)",
+    "endogeneity.kernel_family": "non-numeric scalar (string)",
+    "endogeneity.notes": "list fields are empty"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "artifact": "eurusd_layer1_likelihood_ladder",
+  "description": "Layer-1 model-comparison ladder for the 2021-07-20 EUR/USD four-type event stream (N=97,952). Non-EM rows verbatim from layer1_models_summary.csv; the EM row's AIC/BIC computed from the pinned EM log-likelihood with k=68 under the CSV's convention (AIC=2k-2ll, BIC=k ln N - 2ll), self-checked against the CSV L-BFGS-B row. No new model fitting.",
+  "N_primary": 97952,
+  "aic_bic_convention": "AIC = 2k - 2*loglik ; BIC = k*ln(N) - 2*loglik",
+  "convention_self_check_vs_csv_lbfgsb": {
+    "aic_abs_diff": 0.0,
+    "bic_abs_diff": 0.0,
+    "tolerance": 0.001,
+    "passed": true
+  },
+  "ladder": [
+    {
+      "model": "Poisson_4type",
+      "label": "Poisson (4-type, independent)",
+      "status": "baseline",
+      "N": 97952,
+      "k_params": 4,
+      "log_likelihood": -221426.1482920886,
+      "rho_spec": 0.0,
+      "kernel": "none",
+      "AIC": 442860.2965841772,
+      "BIC": 442898.26551554416,
+      "delta_ll_vs_poisson_4type": 0.0,
+      "source": "layer1_models_summary.csv"
+    },
+    {
+      "model": "ExpHawkes_4type_jitter_random_ms",
+      "label": "Single-exp Hawkes (4-type, random\\_ms jitter)",
+      "status": "converged",
+      "N": 97952,
+      "k_params": 21,
+      "log_likelihood": -107978.53882779353,
+      "rho_spec": 0.4998514588891824,
+      "kernel": "exp",
+      "AIC": 215999.07765558705,
+      "BIC": 216198.41454526372,
+      "delta_ll_vs_poisson_4type": 113447.60946429506,
+      "source": "layer1_models_summary.csv"
+    },
+    {
+      "model": "SumExpHawkes_4type_R4",
+      "label": "Sum-exp Hawkes (R=4), L-BFGS-B",
+      "status": "NON-CONVERGED; historical, superseded by the EM fit",
+      "N": 97952,
+      "k_params": 68,
+      "log_likelihood": -66715.3781583396,
+      "rho_spec": 0.9876654198004231,
+      "kernel": "sumexp_R=4",
+      "AIC": 133566.7563166792,
+      "BIC": 134212.22814991788,
+      "delta_ll_vs_poisson_4type": 154710.770133749,
+      "source": "layer1_models_summary.csv"
+    },
+    {
+      "model": "SumExpHawkes_4type_R4_EM",
+      "label": "Sum-exp Hawkes (R=4), EM-converged",
+      "status": "converged (tol); dissertation empirical anchor",
+      "N": 97952,
+      "k_params": 68,
+      "log_likelihood": -64922.718170694534,
+      "rho_spec": 0.937308200001031,
+      "kernel": "sumexp_R=4",
+      "n_iter": 516,
+      "AIC": 129981.43634138907,
+      "BIC": 130626.90817462774,
+      "delta_ll_vs_poisson_4type": 156503.43012139405,
+      "ll_improvement_over_lbfgsb": 1792.659987645071,
+      "source": "eurusd_layer1_em_summary.json (AIC/BIC computed here, same convention as CSV)"
+    }
+  ],
+  "notes": "Lower AIC/BIC is better. The EM-converged sum-exp fit attains the lowest AIC and BIC of the ladder and is also the legitimate optimiser fixed point; the L-BFGS-B sum-exp row is retained only as the historical, non-converged reading it supersedes."
+}

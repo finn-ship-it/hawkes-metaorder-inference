@@ -1,0 +1,197 @@
+{
+  "envelope_schema_version": "1",
+  "description": "Draft empirical envelope for FX top-of-book observables. All targets are derived from the existing Layer-1 fit and event audit on EURUSD spot quotes (April 2021 \u2013 March 2022 daily concatenation; recommendation document: archive_empirical/Data output/EURUSD output/layer1/layer1_recommendation.md). This file is non-invasive: it does not replace targets/real_fx_envelope.json. It exists so that the comparison layer can later be invoked against a partially calibrated empirical envelope via simulator.envelope_bridge.merge_envelopes.",
+  "notes": [
+    "Each empirical field carries placeholder=false and a 'source' key that names the empirical artefact it was derived from.",
+    "Simulator tick size is 1e-5 (default observation operator). The empirical spread audit is reported in pips (1 pip = 10 ticks at tick_size = 1e-5). Spread targets below have been converted from pips to ticks.",
+    "Empirical EURUSD totals are pooled across the full UTC day; rates are events per second.",
+    "The 4-type alphabet matches the simulator's EventType enum exactly: 0 = bid_up, 1 = bid_down, 2 = ask_up, 3 = ask_down."
+  ],
+  "fields": {
+    "latent.total_rate": {
+      "target": 1.016,
+      "tolerance": {
+        "warn_rel": 0.4,
+        "fail_rel": 0.7
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (sum of 4-type rate_per_s_global)",
+      "notes": "Empirical EURUSD pooled rate across the four directional event types over the full UTC day. Tolerances kept loose because the simulator's first-milestone default has rate ~2.0; this empirical target is roughly half that and a strict warn_rel would push every shipped configuration to fail without delivering scientific information."
+    },
+    "latent.rates_by_event_type": {
+      "target": [
+        0.249,
+        0.258,
+        0.259,
+        0.25
+      ],
+      "tolerance": {
+        "warn_rel": 0.4,
+        "fail_rel": 0.8
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (rate_per_s_global rows for bid_up, bid_down, ask_up, ask_down)",
+      "notes": "Per-component empirical rate vector. Empirically symmetric to within sub-percent; the simulator's symmetric configuration is consistent with the structure of this target if the absolute scale is matched."
+    },
+    "endogeneity.spectral_radius": {
+      "target": 0.4999,
+      "tolerance": {
+        "warn_abs": 0.1,
+        "fail_abs": 0.3
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/layer1/layer1_params_exp_4type_jitter_random_ms.json (field 'spectral_radius')",
+      "notes": "Spectral radius of the empirically fitted 4-type exponential Hawkes branching matrix on EURUSD 20 July 2021 with random_ms jitter. Tier-2 (bivariate mid) gives 0.597; the recommended Tier-3 sum-of-exp gives 0.988 on the primary day. The 4-type single-exponential value is the most directly comparable to the simulator's exponential-kernel default. The first-milestone default (0.2) is well outside warn_abs and would warn under this target \u2014 that is the empirical reality, not a simulator bug."
+    },
+    "observation.spread_mean_ticks": {
+      "target": 3.8,
+      "tolerance": {
+        "warn_abs": 3.0,
+        "fail_abs": 8.0
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (_spread_summary_ row, spread_pips_mean = 0.380; converted at 1 pip = 10 ticks for tick_size = 1e-5)",
+      "notes": "Empirical mean spread on EURUSD across the full audit window, expressed in ticks at the simulator's default tick_size = 1e-5. Real EURUSD is consistently within a few ticks of one pip; the simulator spreads are sub-diffusive in N_obs and sit in the 8-15-tick range on the shipped configurations, which is loose but the same order of magnitude."
+    },
+    "observation.spread_median_ticks": {
+      "target": 3.0,
+      "tolerance": {
+        "warn_abs": 3.0,
+        "fail_abs": 8.0
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (_spread_summary_ row, spread_pips_median = 0.300)",
+      "notes": "Empirical median spread in ticks. Robust to tail excursions."
+    },
+    "observation.spread_p90_ticks": {
+      "target": 5.0,
+      "tolerance": {
+        "warn_abs": 5.0,
+        "fail_abs": 12.0
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (_spread_summary_ row, spread_pips_p90 = 0.500)",
+      "notes": "Empirical 90th-percentile spread in ticks."
+    },
+    "observation.spread_p99_ticks": {
+      "target": 17.0,
+      "tolerance": {
+        "warn_abs": 10.0,
+        "fail_abs": 25.0
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (_spread_summary_ row, spread_pips_p99 = 1.700)",
+      "notes": "Empirical 99th-percentile spread in ticks. Sensitive to tail events; tolerances set wide to accommodate session-of-day variation that the audit pools over."
+    },
+    "observation.spread_max_ticks": {
+      "target": 154.0,
+      "tolerance": {
+        "warn_abs": 100.0,
+        "fail_abs": 250.0
+      },
+      "placeholder": false,
+      "source": "archive_empirical/Data output/EURUSD output/eurusd_event_audit.csv (_spread_summary_ row, spread_pips_max = 15.400)",
+      "notes": "Empirical maximum spread observed in the audit window. The max grows with sample size and is highly path-dependent; tolerances are deliberately loose. This field is informational rather than gating."
+    },
+    "observation.num_crossed_observations": {
+      "target": 0,
+      "tolerance": {
+        "warn_abs": 0,
+        "fail_abs": 0
+      },
+      "placeholder": false,
+      "source": "structural invariant of the censor policy (no empirical source required)",
+      "notes": "Hard invariant. Mirrors the placeholder envelope; not an empirical target but a structural one."
+    }
+  },
+  "eurusd": {
+    "spread_pips_mean": 0.3800191128524931,
+    "spread_pips_median": 0.2999999999997449,
+    "spread_pips_p90": 0.5000000000010552,
+    "spread_pips_p99": 1.7000000000000348,
+    "spread_pips_max": 15.400000000000968,
+    "rates_by_event_type_per_s": [
+      0.24857444767144626,
+      0.25792001625942873,
+      0.25886570001292836,
+      0.25037506390960457
+    ],
+    "total_rate_per_s": 1.015735227853408,
+    "spread_p50_ticks": 2.999999999997449,
+    "spread_p90_ticks": 5.000000000010552,
+    "spread_p99_ticks": 17.000000000000348,
+    "branching_ratio_primary_day": 0.9876654198004231,
+    "n_events_primary_day": 97952,
+    "window_seconds_primary_day": 86400.0,
+    "primary_day_label": "2021-07-20",
+    "branching_ratio_secondary_day": 0.9432091776643319,
+    "n_events_secondary_day": 104734,
+    "secondary_day_label": "2021-07-19",
+    "spread_scaling_exponents": {
+      "spread_mean_ticks": {
+        "b": 0.40503576321817714,
+        "a": 1.1635438522963073,
+        "r2": 0.9819540438570051
+      },
+      "spread_median_ticks": {
+        "b": 0.43373495301459547,
+        "a": 1.009553925049871,
+        "r2": 0.9962402971256671
+      },
+      "spread_p90_ticks": {
+        "b": 0.39813435200782193,
+        "a": 1.9550773176039618,
+        "r2": 0.9748191770524537
+      },
+      "spread_p99_ticks": {
+        "b": 0.4226229906949216,
+        "a": 2.0211440586005893,
+        "r2": 0.9750641009264606
+      },
+      "spread_max_ticks": {
+        "b": 0.4361210873153618,
+        "a": 1.963200129295186,
+        "r2": 0.9758905361150626
+      },
+      "final_spread_ticks": {
+        "b": 0.3819214142454195,
+        "a": 1.7349652231402117,
+        "r2": 0.9242990238560612
+      }
+    },
+    "window": "2021-07 -- 2022-07 (HistData EURUSD 13 monthly CSVs)"
+  },
+  "meta": {
+    "last_refresh_date": "2026-05-06",
+    "eurusd_window": "2021-07 -- 2022-07 (HistData EURUSD 13 monthly CSVs)",
+    "n_seeds_per_ensemble": 50,
+    "crossed_obs_invariant_holds": true,
+    "fields_block_unchanged": true,
+    "ensemble_summary_inputs": {
+      "first_milestone": {
+        "rho_mean": 0.19999999999999993,
+        "rho_std": 2.7755575615628914e-17,
+        "total_rate_mean": 2.4503333333333335,
+        "total_rate_std": 0.29417474021026646,
+        "spread_mean_mean": 8.375782943929357,
+        "num_crossed_obs_max": 0.0
+      },
+      "two_regime_smoke": {
+        "rho_mean": 0.19999999999999993,
+        "rho_std": 2.7755575615628914e-17,
+        "total_rate_mean": 3.3859000000000004,
+        "total_rate_std": 0.2989303542075757,
+        "spread_mean_mean": 23.16169513055421,
+        "num_crossed_obs_max": 0.0
+      },
+      "meta_order_smoke": {
+        "rho_mean": 0.19999999999999993,
+        "rho_std": 2.7755575615628914e-17,
+        "total_rate_mean": 3.093166666666667,
+        "total_rate_std": 0.1934388361558592,
+        "spread_mean_mean": 10.662717379168248,
+        "num_crossed_obs_max": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "model": "field_mean = a * N_obs^b",
+  "horizons": [
+    30,
+    60,
+    120,
+    240,
+    480,
+    960
+  ],
+  "n_seeds_per_horizon": 30,
+  "fits": {
+    "observation.spread_mean_ticks": {
+      "a": 1.1600490437780302,
+      "b": 0.40061721755724256,
+      "r2": 0.9920395090785633,
+      "n": 6
+    },
+    "observation.spread_median_ticks": {
+      "a": 1.159988660558895,
+      "b": 0.3978326975723067,
+      "r2": 0.981608960270027,
+      "n": 6
+    },
+    "observation.spread_p90_ticks": {
+      "a": 1.711637976513004,
+      "b": 0.4224655199758107,
+      "r2": 0.9914602338815721,
+      "n": 6
+    },
+    "observation.spread_p99_ticks": {
+      "a": 1.89359091700265,
+      "b": 0.43279877254965154,
+      "r2": 0.9905796984921965,
+      "n": 6
+    },
+    "observation.spread_max_ticks": {
+      "a": 1.8786111807646402,
+      "b": 0.4418439985099968,
+      "r2": 0.9914756380210916,
+      "n": 6
+    },
+    "observation.final_spread_ticks": {
+      "a": 1.7088145601235123,
+      "b": 0.39234980056708335,
+      "r2": 0.9912502998766392,
+      "n": 6
+    }
+  },
+  "rows": [
+    {
+      "T": 30,
+      "n_members": 30,
+      "N_obs_mean": 68.36666666666666,
+      "N_obs_std": 13.688153840294007,
+      "observation.spread_mean_ticks.mean": 6.100778960481602,
+      "observation.spread_mean_ticks.std": 3.5065427831884204,
+      "observation.spread_median_ticks.mean": 5.866666666666666,
+      "observation.spread_median_ticks.std": 3.4998412662417833,
+      "observation.spread_p90_ticks.mean": 9.996666666666666,
+      "observation.spread_p90_ticks.std": 5.406754006692823,
+      "observation.spread_p99_ticks.mean": 11.385999999999997,
+      "observation.spread_p99_ticks.std": 5.709424139087934,
+      "observation.spread_max_ticks.mean": 11.7,
+      "observation.spread_max_ticks.std": 5.657738063926254,
+      "observation.final_spread_ticks.mean": 8.833333333333334,
+      "observation.final_spread_ticks.std": 6.419155361537494
+    },
+    {
+      "T": 60,
+      "n_members": 30,
+      "N_obs_mean": 140.4,
+      "N_obs_std": 20.110693672770214,
+      "observation.spread_mean_ticks.mean": 8.474483367947938,
+      "observation.spread_mean_ticks.std": 4.630586077555928,
+      "observation.spread_median_ticks.mean": 8.216666666666667,
+      "observation.spread_median_ticks.std": 5.369176431777555,
+      "observation.spread_p90_ticks.mean": 14.240000000000002,
+      "observation.spread_p90_ticks.std": 6.0613309869477785,
+      "observation.spread_p99_ticks.mean": 17.131666666666668,
+      "observation.spread_p99_ticks.std": 6.424948292053062,
+      "observation.spread_max_ticks.mean": 17.833333333333332,
+      "observation.spread_max_ticks.std": 6.501709176995094,
+      "observation.final_spread_ticks.mean": 12.333333333333334,
+      "observation.final_spread_ticks.std": 8.564785785736591
+    },
+    {
+      "T": 120,
+      "n_members": 30,
+      "N_obs_mean": 285.76666666666665,
+      "N_obs_std": 28.938651584957366,
+      "observation.spread_mean_ticks.mean": 11.82365440697008,
+      "observation.spread_mean_ticks.std": 6.625572906817185,
+      "observation.spread_median_ticks.mean": 12.166666666666666,
+      "observation.spread_median_ticks.std": 7.197607627229727,
+      "observation.spread_p90_ticks.mean": 19.49666666666667,
+      "observation.spread_p90_ticks.std": 9.785039033590456,
+      "observation.spread_p99_ticks.mean": 22.55566666666667,
+      "observation.spread_p99_ticks.std": 10.41309934116106,
+      "observation.spread_max_ticks.mean": 23.466666666666665,
+      "observation.spread_max_ticks.std": 10.566403782218853,
+      "observation.final_spread_ticks.mean": 16.233333333333334,
+      "observation.final_spread_ticks.std": 12.616611624714812
+    },
+    {
+      "T": 240,
+      "n_members": 30,
+      "N_obs_mean": 579.1,
+      "N_obs_std": 33.54434875404996,
+      "observation.spread_mean_ticks.mean": 15.147229951757181,
+      "observation.spread_mean_ticks.std": 8.988872303741866,
+      "observation.spread_median_ticks.mean": 15.533333333333333,
+      "observation.spread_median_ticks.std": 10.272076496772964,
+      "observation.spread_p90_ticks.mean": 24.216666666666665,
+      "observation.spread_p90_ticks.std": 12.49928220161284,
+      "observation.spread_p99_ticks.mean": 28.188000000000002,
+      "observation.spread_p99_ticks.std": 12.47263468558267,
+      "observation.spread_max_ticks.mean": 29.766666666666666,
+      "observation.spread_max_ticks.std": 12.60868307512283,
+      "observation.final_spread_ticks.mean": 18.9,
+      "observation.final_spread_ticks.std": 12.161003248087717
+    },
+    {
+      "T": 480,
+      "n_members": 30,
+      "N_obs_mean": 1173.8,
+      "N_obs_std": 49.15445045974983,
+      "observation.spread_mean_ticks.mean": 18.223800422183437,
+      "observation.spread_mean_ticks.std": 9.785512862159031,
+      "observation.spread_median_ticks.mean": 17.633333333333333,
+      "observation.spread_median_ticks.std": 11.326909944415064,
+      "observation.spread_p90_ticks.mean": 31.48666666666667,
+      "observation.spread_p90_ticks.std": 13.603987977386963,
+      "observation.spread_p99_ticks.mean": 37.958,
+      "observation.spread_p99_ticks.std": 14.439760016473036,
+      "observation.spread_max_ticks.mean": 40.266666666666666,
+      "observation.spread_max_ticks.std": 14.438220881473667,
+      "observation.final_spread_ticks.mean": 27.8,
+      "observation.final_spread_ticks.std": 20.12527432525248
+    },
+    {
+      "T": 960,
+      "n_members": 30,
+      "N_obs_mean": 2366.5666666666666,
+      "N_obs_std": 72.66162826569621,
+      "observation.spread_mean_ticks.mean": 26.74038523386463,
+      "observation.spread_mean_ticks.std": 12.739751149207104,
+      "observation.spread_median_ticks.mean": 25.4,
+      "observation.spread_median_ticks.std": 13.646977687385586,
+      "observation.spread_p90_ticks.mean": 48.333333333333336,
+      "observation.spread_p90_ticks.std": 23.90862234053276,
+      "observation.spread_p99_ticks.mean": 57.79966666666666,
+      "observation.spread_p99_ticks.std": 26.504978209553187,
+      "observation.spread_max_ticks.mean": 61.233333333333334,
+      "observation.spread_max_ticks.std": 26.236975604838467,
+      "observation.final_spread_ticks.mean": 36.833333333333336,
+      "observation.final_spread_ticks.std": 31.390108137578768
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+.DS_Store
+
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Notebook/editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Local build/runtime scratch
+tmp/
+output/
+.workbench/
+*.log
+
+# Large or private data should stay outside this repository.
+/Data/
+/archive_empirical/
+/recalibrated_models/
+/claude_code_prompts/
+/data_inputs/
+/dissertation_artifacts/data_inputs/
+/runs/_archive_*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.parquet
+*.npz
+# Publication-only sorted Q-Q coordinates; raw event archives stay ignored.
+!dissertation_artifacts/data/eurusd_layer1_em_residual_plot_data.npz
+*.npy
+
+# Generated temporary artefacts
+dissertation_artifacts/.robustness_tmp/
+dissertation_artifacts/build_log.json
+
+# This repository intentionally excludes thesis/Overleaf and reference material.
+overleaf/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.toc

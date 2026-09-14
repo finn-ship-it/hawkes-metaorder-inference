@@ -1,0 +1,237 @@
+{
+  "primary_day": "2021-07-20",
+  "n_events": 97952,
+  "fit_window_seconds": 86400.0,
+  "betas_grid_per_s": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "jitter": {
+    "scheme": "random_ms",
+    "seed": 20210720
+  },
+  "ll_sanity_check": {
+    "expected_ll": -66715.3781583396,
+    "em_module_ll": -66715.3781583396,
+    "delta": 0.0,
+    "agree_within_1e-3": true
+  },
+  "rho_init_grid": [
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "starts_per_level": 4,
+  "max_iter": 600,
+  "tol_relative_ll": 1e-07,
+  "rho_cap": 0.99,
+  "runs": [
+    {
+      "idx": 0,
+      "rho_init": 0.3,
+      "seed": 4242,
+      "rho_final": 0.9371922726406844,
+      "log_likelihood": -64923.57362653715,
+      "n_iter": 412,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 305.46207785606384
+    },
+    {
+      "idx": 1,
+      "rho_init": 0.3,
+      "seed": 4259,
+      "rho_final": 0.9372189889932525,
+      "log_likelihood": -64923.619746563876,
+      "n_iter": 455,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 336.77598690986633
+    },
+    {
+      "idx": 2,
+      "rho_init": 0.3,
+      "seed": 4276,
+      "rho_final": 0.9372126728117107,
+      "log_likelihood": -64923.56475063939,
+      "n_iter": 387,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 290.2959499359131
+    },
+    {
+      "idx": 3,
+      "rho_init": 0.3,
+      "seed": 4293,
+      "rho_final": 0.9372446806692423,
+      "log_likelihood": -64923.60126762809,
+      "n_iter": 404,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 301.9026720523834
+    },
+    {
+      "idx": 4,
+      "rho_init": 0.5,
+      "seed": 4310,
+      "rho_final": 0.9372244670808167,
+      "log_likelihood": -64923.48485329136,
+      "n_iter": 530,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 376.9941189289093
+    },
+    {
+      "idx": 5,
+      "rho_init": 0.5,
+      "seed": 4327,
+      "rho_final": 0.9372141947320032,
+      "log_likelihood": -64923.523130779235,
+      "n_iter": 452,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 330.75166296958923
+    },
+    {
+      "idx": 6,
+      "rho_init": 0.5,
+      "seed": 4344,
+      "rho_final": 0.9372476113027222,
+      "log_likelihood": -64923.5552631291,
+      "n_iter": 395,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 293.26945400238037
+    },
+    {
+      "idx": 7,
+      "rho_init": 0.5,
+      "seed": 4361,
+      "rho_final": 0.9372018458986338,
+      "log_likelihood": -64923.68960875538,
+      "n_iter": 497,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 361.1681480407715
+    },
+    {
+      "idx": 8,
+      "rho_init": 0.7,
+      "seed": 4378,
+      "rho_final": 0.9372061912524643,
+      "log_likelihood": -64923.66399880139,
+      "n_iter": 438,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 276.33036613464355
+    },
+    {
+      "idx": 9,
+      "rho_init": 0.7,
+      "seed": 4395,
+      "rho_final": 0.9372055096180631,
+      "log_likelihood": -64923.43925323491,
+      "n_iter": 470,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 294.3093891143799
+    },
+    {
+      "idx": 10,
+      "rho_init": 0.7,
+      "seed": 4412,
+      "rho_final": 0.9372214540073032,
+      "log_likelihood": -64923.53639509079,
+      "n_iter": 421,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 267.3007302284241
+    },
+    {
+      "idx": 11,
+      "rho_init": 0.7,
+      "seed": 4429,
+      "rho_final": 0.9372510395347173,
+      "log_likelihood": -64923.52276442108,
+      "n_iter": 466,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 293.5783951282501
+    },
+    {
+      "idx": 12,
+      "rho_init": 0.9,
+      "seed": 4446,
+      "rho_final": 0.9372309035990175,
+      "log_likelihood": -64923.57746316799,
+      "n_iter": 402,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 253.58119988441467
+    },
+    {
+      "idx": 13,
+      "rho_init": 0.9,
+      "seed": 4463,
+      "rho_final": 0.9371758478968415,
+      "log_likelihood": -64923.2148122441,
+      "n_iter": 388,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 248.23398995399475
+    },
+    {
+      "idx": 14,
+      "rho_init": 0.9,
+      "seed": 4480,
+      "rho_final": 0.9371807925307483,
+      "log_likelihood": -64923.958834568766,
+      "n_iter": 516,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 322.4880301952362
+    },
+    {
+      "idx": 15,
+      "rho_init": 0.9,
+      "seed": 4497,
+      "rho_final": 0.9372443721503018,
+      "log_likelihood": -64923.411448493,
+      "n_iter": 493,
+      "converged": true,
+      "converged_reason": "tol",
+      "projection_count": 0,
+      "wall_clock_seconds": 305.3910720348358
+    }
+  ],
+  "summary": {
+    "n_runs": 16,
+    "n_converged": 16,
+    "rho_median_converged": 0.9372165918626278,
+    "ll_median_converged": -64923.56000688425,
+    "rho_range_converged": 7.519163787583771e-05,
+    "ll_range_converged": 0.7440223246667301,
+    "single_basin_verdict": true,
+    "second_basin_candidates": [],
+    "distinct_basin_runs": [],
+    "total_wall_clock_seconds": 684.6691541671753
+  }
+}

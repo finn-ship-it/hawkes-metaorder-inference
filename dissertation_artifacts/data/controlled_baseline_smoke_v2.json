@@ -1,0 +1,36 @@
+{
+  "scope": "One seed-42 mechanical check for each of the three controlled configurations",
+  "n_runs": 3,
+  "n_seeds_per_configuration": 1,
+  "all_spectral_radii_equal_0_2": true,
+  "total_crossed_observations": 0,
+  "runs": [
+    {
+      "config": "configs/first_milestone.json",
+      "seed": 42,
+      "horizon_seconds": 60.0,
+      "raw_run": "raw/smoke/first_milestone_seed42_smoke_42",
+      "spectral_radius": 0.19999999999999996,
+      "num_crossed_observations": 0,
+      "num_observed_events": 131
+    },
+    {
+      "config": "configs/two_regime_smoke.json",
+      "seed": 42,
+      "horizon_seconds": 600.0,
+      "raw_run": "raw/smoke/two_regime_smoke_seed42_smoke_42",
+      "spectral_radius": 0.19999999999999996,
+      "num_crossed_observations": 0,
+      "num_observed_events": 2136
+    },
+    {
+      "config": "configs/meta_order_smoke.json",
+      "seed": 42,
+      "horizon_seconds": 120.0,
+      "raw_run": "raw/ensembles/ensemble_meta_order_smoke_50seeds/meta_order_smoke_50seeds_42",
+      "spectral_radius": 0.19999999999999996,
+      "num_crossed_observations": 0,
+      "num_observed_events": 360
+    }
+  ]
+}

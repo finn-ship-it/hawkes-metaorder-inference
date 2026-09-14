@@ -1,0 +1,107 @@
+[
+  {
+    "name": "first_milestone",
+    "final_dir": "runs/ensembles_2026-05-06/first_milestone_50seeds",
+    "inner_ensemble_dir": "runs/ensembles_2026-05-06/first_milestone_50seeds/ensemble_first_milestone_50seeds",
+    "n_members": 50,
+    "rho_mean": 0.19999999999999996,
+    "rho_std": 0.0,
+    "rho_min": 0.19999999999999996,
+    "rho_max": 0.19999999999999996,
+    "crossed_total": 0,
+    "total_rate_mean": 2.4503333333333335,
+    "total_rate_std": 0.29417474021026646,
+    "envelope_overall_status": "warn",
+    "envelope_status_counts": {
+      "pass": 11,
+      "warn": 2,
+      "fail": 0,
+      "missing": 0,
+      "unchecked": 0
+    },
+    "ensemble_summary_keys": [
+      "ensemble_schema_version",
+      "ensemble_timestamp_utc",
+      "num_members",
+      "seeds",
+      "member_run_dirs",
+      "observation_enabled",
+      "comparison_requested",
+      "envelope_path",
+      "comparison_summary",
+      "comparison_statuses",
+      "aggregate",
+      "skipped_fields"
+    ]
+  },
+  {
+    "name": "two_regime_smoke",
+    "final_dir": "runs/ensembles_2026-05-06/two_regime_smoke_50seeds",
+    "inner_ensemble_dir": "runs/ensembles_2026-05-06/two_regime_smoke_50seeds/ensemble_two_regime_smoke_50seeds",
+    "n_members": 50,
+    "rho_mean": 0.19999999999999996,
+    "rho_std": 0.0,
+    "rho_min": 0.19999999999999996,
+    "rho_max": 0.19999999999999996,
+    "crossed_total": 0,
+    "total_rate_mean": 3.3859,
+    "total_rate_std": 0.2989303542075757,
+    "envelope_overall_status": "fail",
+    "envelope_status_counts": {
+      "pass": 7,
+      "warn": 2,
+      "fail": 4,
+      "missing": 0,
+      "unchecked": 0
+    },
+    "ensemble_summary_keys": [
+      "ensemble_schema_version",
+      "ensemble_timestamp_utc",
+      "num_members",
+      "seeds",
+      "member_run_dirs",
+      "observation_enabled",
+      "comparison_requested",
+      "envelope_path",
+      "comparison_summary",
+      "comparison_statuses",
+      "aggregate",
+      "skipped_fields"
+    ]
+  },
+  {
+    "name": "meta_order_smoke",
+    "final_dir": "runs/ensembles_2026-05-06/meta_order_smoke_50seeds",
+    "inner_ensemble_dir": "runs/ensembles_2026-05-06/meta_order_smoke_50seeds/ensemble_meta_order_smoke_50seeds",
+    "n_members": 50,
+    "rho_mean": 0.19999999999999996,
+    "rho_std": 0.0,
+    "rho_min": 0.19999999999999996,
+    "rho_max": 0.19999999999999996,
+    "crossed_total": 0,
+    "total_rate_mean": 3.093166666666667,
+    "total_rate_std": 0.1934388361558592,
+    "envelope_overall_status": "fail",
+    "envelope_status_counts": {
+      "pass": 10,
+      "warn": 2,
+      "fail": 1,
+      "missing": 0,
+      "unchecked": 0
+    },
+    "ensemble_summary_keys": [
+      "ensemble_schema_version",
+      "ensemble_timestamp_utc",
+      "num_members",
+      "seeds",
+      "member_run_dirs",
+      "observation_enabled",
+      "comparison_requested",
+      "envelope_path",
+      "comparison_summary",
+      "comparison_statuses",
+      "aggregate",
+      "skipped_fields"
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "prompt": "07_konark_sim_d2_integration",
+  "config": {
+    "seed": 1,
+    "horizon_stage1_seconds": 60.0,
+    "horizon_stage2_seconds": 2100.0,
+    "window_seconds": 5.0,
+    "event_count_floor": 5000,
+    "rate_ratio_band": [
+      0.9,
+      1.1
+    ],
+    "composition_gap_threshold_pp": 25.0,
+    "rho_gap_threshold": 0.2,
+    "d2_spread0": 0.03,
+    "d1_config_path": "configs/meta_order_smoke.json"
+  },
+  "stage_1_smoke": {
+    "d2_smoke": {
+      "horizon_seconds": 60.0,
+      "n_konark_latent": 179,
+      "n_fx_observed": 139,
+      "censoring_fraction": 0.22346368715083798,
+      "wall_seconds": 0.3450019359588623,
+      "fx_type_counts": {
+        "BID_UP": 64,
+        "BID_DOWN": 19,
+        "ASK_UP": 13,
+        "ASK_DOWN": 43
+      },
+      "fx_type_composition_pct": {
+        "BID_UP": 46.0431654676259,
+        "BID_DOWN": 13.66906474820144,
+        "ASK_UP": 9.352517985611511,
+        "ASK_DOWN": 30.93525179856115
+      },
+      "konark_native_type_counts": {
+        "lo_deep_Ask": 3,
+        "co_deep_Ask": 1,
+        "lo_top_Ask": 6,
+        "co_top_Ask": 1,
+        "mo_Ask": 13,
+        "lo_inspread_Ask": 43,
+        "lo_inspread_Bid": 64,
+        "mo_Bid": 19,
+        "co_top_Bid": 9,
+        "lo_top_Bid": 10,
+        "co_deep_Bid": 7,
+        "lo_deep_Bid": 3
+      },
+      "event_rate_per_second": 2.316666666666667,
+      "config": {
+        "spread0": 0.03,
+        "seed": 1,
+        "use_exp_approx": true
+      },
+      "runtime_patches": [
+        {
+          "target": "HawkesArrival.thinningOgataIS2 line ~335",
+          "issue": "Original line `self.lamb = float(sum(decays))` fails on numpy 2.x because `sum(decays)` (Python builtin over a (12, 1) array) returns a (1,)-shaped numpy array, and `float(...)` on a non-scalar array now raises TypeError.",
+          "patch": "Replace the offending line with `self.lamb = float(np.sum(decays))`. Applied at instance level via types.MethodType in `_apply_runtime_patches`. Konark source is NOT modified on disk (read-only)."
+        },
+        {
+          "target": "HawkesArrival.thinningOgataIS2 timeseries-truncation block (post-append)",
+          "issue": "Konark advances `self.left` past stale points but never resets it to 0 after the timeseries is truncated. Once self.left grows to the post-truncation length, the next truncation wipes the entire timeseries, and the next `get_nextarrival` call hits IndexError on `self.timeseries[-1]`. Surfaces after ~30 events under the default expApprox=True / TAU=10 configuration.",
+          "patch": "Append `self.left = 0` immediately after the truncation slice. Applied at instance level in the same patched method. Konark source is NOT modified on disk (read-only)."
+        }
+      ]
+    },
+    "smoke_gate": {
+      "smoke_run_non_empty": true,
+      "latent_strictly_gt_observed": true,
+      "regime_channel_consistency_check_only_in_test_module": true
+    }
+  },
+  "stage_2_production": {
+    "d1": {
+      "horizon_seconds": 2100.0,
+      "n_events": 5164,
+      "wall_seconds": 30.63196587562561,
+      "fx_type_counts": {
+        "BID_UP": 1327,
+        "BID_DOWN": 1261,
+        "ASK_UP": 1321,
+        "ASK_DOWN": 1255
+      },
+      "fx_type_composition_pct": {
+        "BID_UP": 25.69713400464756,
+        "BID_DOWN": 24.419054996127034,
+        "ASK_UP": 25.580945003872966,
+        "ASK_DOWN": 24.30286599535244
+      },
+      "event_rate_per_second": 2.459047619047619,
+      "config_path": "configs/meta_order_smoke.json"
+    },
+    "d2": {
+      "horizon_seconds": 2100.0,
+      "n_konark_latent": 10872,
+      "n_fx_observed": 8602,
+      "censoring_fraction": 0.20879323031640912,
+      "wall_seconds": 20.456095933914185,
+      "fx_type_counts": {
+        "BID_UP": 5358,
+        "BID_DOWN": 1087,
+        "ASK_UP": 457,
+        "ASK_DOWN": 1700
+      },
+      "fx_type_composition_pct": {
+        "BID_UP": 62.28784003720065,
+        "BID_DOWN": 12.636596140432458,
+        "ASK_UP": 5.31271797256452,
+        "ASK_DOWN": 19.76284584980237
+      },
+      "konark_native_type_counts": {
+        "lo_deep_Ask": 196,
+        "co_deep_Ask": 137,
+        "lo_top_Ask": 333,
+        "co_top_Ask": 218,
+        "mo_Ask": 457,
+        "lo_inspread_Ask": 1700,
+        "lo_inspread_Bid": 5358,
+        "mo_Bid": 1087,
+        "co_top_Bid": 565,
+        "lo_top_Bid": 446,
+        "co_deep_Bid": 229,
+        "lo_deep_Bid": 146
+      },
+      "event_rate_per_second": 4.096190476190476,
+      "config": {
+        "spread0": 0.03,
+        "seed": 1,
+        "use_exp_approx": true
+      },
+      "runtime_patches": [
+        {
+          "target": "HawkesArrival.thinningOgataIS2 line ~335",
+          "issue": "Original line `self.lamb = float(sum(decays))` fails on numpy 2.x because `sum(decays)` (Python builtin over a (12, 1) array) returns a (1,)-shaped numpy array, and `float(...)` on a non-scalar array now raises TypeError.",
+          "patch": "Replace the offending line with `self.lamb = float(np.sum(decays))`. Applied at instance level via types.MethodType in `_apply_runtime_patches`. Konark source is NOT modified on disk (read-only)."
+        },
+        {
+          "target": "HawkesArrival.thinningOgataIS2 timeseries-truncation block (post-append)",
+          "issue": "Konark advances `self.left` past stale points but never resets it to 0 after the timeseries is truncated. Once self.left grows to the post-truncation length, the next truncation wipes the entire timeseries, and the next `get_nextarrival` call hits IndexError on `self.timeseries[-1]`. Surfaces after ~30 events under the default expApprox=True / TAU=10 configuration.",
+          "patch": "Append `self.left = 0` immediately after the truncation slice. Applied at instance level in the same patched method. Konark source is NOT modified on disk (read-only)."
+        }
+      ]
+    },
+    "gate": {
+      "classification": "07_CONFIGURATION_INCOMPLETE_B",
+      "classification_why": "composition AND rate mismatched: rate ratio = 1.666 (outside [0.9, 1.1]); max composition gap = 36.6 pp > 25 pp",
+      "n_events_d1": 5164,
+      "n_events_d2": 8602,
+      "event_count_floor": 5000,
+      "event_count_floor_met": true,
+      "rate_ratio_d2_over_d1": 1.66576297443842,
+      "rate_ratio_band": [
+        0.9,
+        1.1
+      ],
+      "rate_gate_passes": false,
+      "composition_gap_pp": {
+        "BID_UP": 36.59070603255309,
+        "BID_DOWN": 11.782458855694577,
+        "ASK_UP": 20.268227031308445,
+        "ASK_DOWN": 4.54002014555007
+      },
+      "composition_gap_max_pp": 36.59070603255309,
+      "composition_gap_threshold_pp": 25.0,
+      "composition_gate_passes": false
+    },
+    "inference_d1": null,
+    "inference_d2": null,
+    "hmm_posterior_diagnostics_d2": {
+      "ground_truth_labels_available": false,
+      "ground_truth_unavailability_reason": "Konark's HawkesArrival does not expose meta-order activity labels outside the gym TradingEnv (see Konarks-github repo/HawkesRLTrading/src/SimulationEntities/MetaOrderTradingAgents.py \u2014 coupled to the gym env, not independently runnable on the bare HawkesArrival stream). HMM accuracy against ground truth is therefore not reportable; posterior diagnostics are reported in lieu, per the prompt-07 ground-truth-availability fallback clause.",
+      "diagnostic_unavailable": false,
+      "hmm_converged": true,
+      "hmm_n_iter": 28,
+      "active_state_index": 1,
+      "n_windows": 420,
+      "posterior_active_window_rate": 0.3,
+      "posterior_mean_entropy_nats": 0.23801749064553146,
+      "viterbi_regime_durations_seconds": {
+        "median": 5.0,
+        "p10": 5.0,
+        "p90": 20.0,
+        "n_segments": 207
+      }
+    }
+  },
+  "classification": "07_CONFIGURATION_INCOMPLETE_B",
+  "known_failure_modes": [
+    {
+      "mode": "high-rate kernelparams seeds hang",
+      "detail": "Konark's HawkesArrival.generatefakeparams() draws a random sign mask via np.random.choice([1, -1]); some seeds produce kernel configurations whose (rate-amplified) thinning loop hangs at simulator wall-clock approaching minutes per second of simulated time. Working seed for the persisted comparison: 1. Seeds 2 and higher have NOT been exhaustively certified; multi-seed validation is deferred. This is potentially a third Konark bug but does NOT block the seed-1 comparison; the spec's third-bug-stop trigger applies to substantive Konark re-implementation, not to a workaround that simply uses one working seed."
+    },
+    {
+      "mode": "high spread0 hangs",
+      "detail": "Initial spread spread0 >= 0.05 ticks * tick_size (0.05 absolute) hangs the thinning loop similarly. Working spread0 for the persisted comparison: 0.03. Below 0.02, the in-spread channels (lo_inspread_*) are gated off by Konark's `if 100*round(spread, 2) < 2` check; above ~0.05, the rate amplification triggers the hang."
+    }
+  ]
+}

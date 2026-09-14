@@ -1,0 +1,1175 @@
+{
+  "ensemble_schema_version": "1",
+  "ensemble_timestamp_utc": "first_milestone_50seeds",
+  "num_members": 50,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "member_run_dirs": [
+    "first_milestone_50seeds_1",
+    "first_milestone_50seeds_2",
+    "first_milestone_50seeds_3",
+    "first_milestone_50seeds_4",
+    "first_milestone_50seeds_5",
+    "first_milestone_50seeds_6",
+    "first_milestone_50seeds_7",
+    "first_milestone_50seeds_8",
+    "first_milestone_50seeds_9",
+    "first_milestone_50seeds_10",
+    "first_milestone_50seeds_11",
+    "first_milestone_50seeds_12",
+    "first_milestone_50seeds_13",
+    "first_milestone_50seeds_14",
+    "first_milestone_50seeds_15",
+    "first_milestone_50seeds_16",
+    "first_milestone_50seeds_17",
+    "first_milestone_50seeds_18",
+    "first_milestone_50seeds_19",
+    "first_milestone_50seeds_20",
+    "first_milestone_50seeds_21",
+    "first_milestone_50seeds_22",
+    "first_milestone_50seeds_23",
+    "first_milestone_50seeds_24",
+    "first_milestone_50seeds_25",
+    "first_milestone_50seeds_26",
+    "first_milestone_50seeds_27",
+    "first_milestone_50seeds_28",
+    "first_milestone_50seeds_29",
+    "first_milestone_50seeds_30",
+    "first_milestone_50seeds_31",
+    "first_milestone_50seeds_32",
+    "first_milestone_50seeds_33",
+    "first_milestone_50seeds_34",
+    "first_milestone_50seeds_35",
+    "first_milestone_50seeds_36",
+    "first_milestone_50seeds_37",
+    "first_milestone_50seeds_38",
+    "first_milestone_50seeds_39",
+    "first_milestone_50seeds_40",
+    "first_milestone_50seeds_41",
+    "first_milestone_50seeds_42",
+    "first_milestone_50seeds_43",
+    "first_milestone_50seeds_44",
+    "first_milestone_50seeds_45",
+    "first_milestone_50seeds_46",
+    "first_milestone_50seeds_47",
+    "first_milestone_50seeds_48",
+    "first_milestone_50seeds_49",
+    "first_milestone_50seeds_50"
+  ],
+  "observation_enabled": true,
+  "comparison_requested": true,
+  "envelope_path": "targets/real_fx_envelope.json",
+  "comparison_summary": {
+    "pass": 6,
+    "warn": 19,
+    "fail": 25,
+    "missing": 0,
+    "unchecked": 0
+  },
+  "comparison_statuses": [
+    {
+      "seed": 1,
+      "run_dir": "first_milestone_50seeds_1",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 11,
+        "warn": 1,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 2,
+      "run_dir": "first_milestone_50seeds_2",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 10,
+        "warn": 3,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 3,
+      "run_dir": "first_milestone_50seeds_3",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 3,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 4,
+      "run_dir": "first_milestone_50seeds_4",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 5,
+      "run_dir": "first_milestone_50seeds_5",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 6,
+      "run_dir": "first_milestone_50seeds_6",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 7,
+      "run_dir": "first_milestone_50seeds_7",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 10,
+        "warn": 3,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 8,
+      "run_dir": "first_milestone_50seeds_8",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 11,
+        "warn": 2,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 9,
+      "run_dir": "first_milestone_50seeds_9",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 4,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 10,
+      "run_dir": "first_milestone_50seeds_10",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 11,
+        "warn": 1,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 11,
+      "run_dir": "first_milestone_50seeds_11",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 12,
+      "run_dir": "first_milestone_50seeds_12",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 13,
+      "run_dir": "first_milestone_50seeds_13",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 14,
+      "run_dir": "first_milestone_50seeds_14",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 15,
+      "run_dir": "first_milestone_50seeds_15",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 3,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 16,
+      "run_dir": "first_milestone_50seeds_16",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 11,
+        "warn": 2,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 17,
+      "run_dir": "first_milestone_50seeds_17",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 12,
+        "warn": 0,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 18,
+      "run_dir": "first_milestone_50seeds_18",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 19,
+      "run_dir": "first_milestone_50seeds_19",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 20,
+      "run_dir": "first_milestone_50seeds_20",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 12,
+        "warn": 0,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 21,
+      "run_dir": "first_milestone_50seeds_21",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 10,
+        "warn": 2,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 22,
+      "run_dir": "first_milestone_50seeds_22",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 12,
+        "warn": 0,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 23,
+      "run_dir": "first_milestone_50seeds_23",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 10,
+        "warn": 2,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 24,
+      "run_dir": "first_milestone_50seeds_24",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 3,
+        "fail": 4,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 25,
+      "run_dir": "first_milestone_50seeds_25",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 26,
+      "run_dir": "first_milestone_50seeds_26",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 27,
+      "run_dir": "first_milestone_50seeds_27",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 6,
+        "warn": 6,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 28,
+      "run_dir": "first_milestone_50seeds_28",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 9,
+        "warn": 4,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 29,
+      "run_dir": "first_milestone_50seeds_29",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 2,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 30,
+      "run_dir": "first_milestone_50seeds_30",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 10,
+        "warn": 2,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 31,
+      "run_dir": "first_milestone_50seeds_31",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 4,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 32,
+      "run_dir": "first_milestone_50seeds_32",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 12,
+        "warn": 0,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 33,
+      "run_dir": "first_milestone_50seeds_33",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 34,
+      "run_dir": "first_milestone_50seeds_34",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 7,
+        "warn": 4,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 35,
+      "run_dir": "first_milestone_50seeds_35",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 11,
+        "warn": 0,
+        "fail": 2,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 36,
+      "run_dir": "first_milestone_50seeds_36",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 37,
+      "run_dir": "first_milestone_50seeds_37",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 38,
+      "run_dir": "first_milestone_50seeds_38",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 39,
+      "run_dir": "first_milestone_50seeds_39",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 40,
+      "run_dir": "first_milestone_50seeds_40",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 10,
+        "warn": 2,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 41,
+      "run_dir": "first_milestone_50seeds_41",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 12,
+        "warn": 0,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 42,
+      "run_dir": "first_milestone_50seeds_42",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 43,
+      "run_dir": "first_milestone_50seeds_43",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 9,
+        "warn": 3,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 44,
+      "run_dir": "first_milestone_50seeds_44",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 45,
+      "run_dir": "first_milestone_50seeds_45",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 11,
+        "warn": 1,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 46,
+      "run_dir": "first_milestone_50seeds_46",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 11,
+        "warn": 2,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 47,
+      "run_dir": "first_milestone_50seeds_47",
+      "overall_status": "fail",
+      "status_counts": {
+        "pass": 8,
+        "warn": 4,
+        "fail": 1,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 48,
+      "run_dir": "first_milestone_50seeds_48",
+      "overall_status": "pass",
+      "status_counts": {
+        "pass": 13,
+        "warn": 0,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 49,
+      "run_dir": "first_milestone_50seeds_49",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 10,
+        "warn": 3,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    },
+    {
+      "seed": 50,
+      "run_dir": "first_milestone_50seeds_50",
+      "overall_status": "warn",
+      "status_counts": {
+        "pass": 12,
+        "warn": 1,
+        "fail": 0,
+        "missing": 0,
+        "unchecked": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "horizon": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 60.0,
+      "std": 0.0,
+      "min": 60.0,
+      "max": 60.0
+    },
+    "seed": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 25.5,
+      "std": 14.430869689661812,
+      "min": 1.0,
+      "max": 50.0
+    },
+    "dimension": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 4.0,
+      "std": 0.0,
+      "min": 4.0,
+      "max": 4.0
+    },
+    "latent.num_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 147.02,
+      "std": 17.650484412615988,
+      "min": 111.0,
+      "max": 190.0
+    },
+    "latent.counts_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 36.68,
+          "std": 6.649631568741233,
+          "min": 19.0,
+          "max": 56.0
+        },
+        {
+          "n": 50,
+          "mean": 37.72,
+          "std": 6.49935381403413,
+          "min": 23.0,
+          "max": 54.0
+        },
+        {
+          "n": 50,
+          "mean": 36.86,
+          "std": 6.141693577507755,
+          "min": 23.0,
+          "max": 55.0
+        },
+        {
+          "n": 50,
+          "mean": 35.76,
+          "std": 6.4453394014590115,
+          "min": 20.0,
+          "max": 49.0
+        }
+      ]
+    },
+    "latent.rates_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 0.6113333333333334,
+          "std": 0.11082719281235388,
+          "min": 0.31666666666666665,
+          "max": 0.9333333333333333
+        },
+        {
+          "n": 50,
+          "mean": 0.6286666666666667,
+          "std": 0.10832256356723552,
+          "min": 0.38333333333333336,
+          "max": 0.9
+        },
+        {
+          "n": 50,
+          "mean": 0.6143333333333333,
+          "std": 0.10236155962512923,
+          "min": 0.38333333333333336,
+          "max": 0.9166666666666666
+        },
+        {
+          "n": 50,
+          "mean": 0.596,
+          "std": 0.10742232335765017,
+          "min": 0.3333333333333333,
+          "max": 0.8166666666666667
+        }
+      ]
+    },
+    "latent.total_rate": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2.4503333333333335,
+      "std": 0.29417474021026646,
+      "min": 1.85,
+      "max": 3.1666666666666665
+    },
+    "latent.acceptance_ratio": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.903080840288184,
+      "std": 0.023891423374890485,
+      "min": 0.8409090909090909,
+      "max": 0.9693251533742331
+    },
+    "latent.num_proposals": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 162.62,
+      "std": 17.50187418535512,
+      "min": 125.0,
+      "max": 206.0
+    },
+    "latent.num_acceptances": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 147.02,
+      "std": 17.650484412615988,
+      "min": 111.0,
+      "max": 190.0
+    },
+    "regime.num_regimes": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "regime.num_regime_jumps": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "regime.time_in_regime": {
+      "kind": "list",
+      "length": 1,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 60.0,
+          "std": 0.0,
+          "min": 60.0,
+          "max": 60.0
+        }
+      ]
+    },
+    "regime.time_fraction_by_regime": {
+      "kind": "list",
+      "length": 1,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    "meta_order.num_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "meta_order.time_inside_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "meta_order.time_fraction_inside_windows": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "observation.num_latent_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 147.02,
+      "std": 17.650484412615988,
+      "min": 111.0,
+      "max": 190.0
+    },
+    "observation.num_observed_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 138.76,
+      "std": 17.884697369539136,
+      "min": 103.0,
+      "max": 176.0
+    },
+    "observation.num_censored_events": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 8.26,
+      "std": 6.320791089729196,
+      "min": 0.0,
+      "max": 23.0
+    },
+    "observation.censoring_fraction": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.05634519804190769,
+      "std": 0.044881767848489476,
+      "min": 0.0,
+      "max": 0.17829457364341086
+    },
+    "observation.num_crossed_observations": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "observation.counts_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 32.68,
+          "std": 6.087495379875044,
+          "min": 18.0,
+          "max": 47.0
+        },
+        {
+          "n": 50,
+          "mean": 37.72,
+          "std": 6.49935381403413,
+          "min": 23.0,
+          "max": 54.0
+        },
+        {
+          "n": 50,
+          "mean": 36.86,
+          "std": 6.141693577507755,
+          "min": 23.0,
+          "max": 55.0
+        },
+        {
+          "n": 50,
+          "mean": 31.5,
+          "std": 5.5072679252057455,
+          "min": 19.0,
+          "max": 43.0
+        }
+      ]
+    },
+    "observation.interarrival_mean_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 1.8367059680803905,
+          "std": 0.40238595531747434,
+          "min": 1.2214419951720792,
+          "max": 3.2568099906456656
+        },
+        {
+          "n": 50,
+          "mean": 1.614250787932849,
+          "std": 0.3185737494338471,
+          "min": 1.0503808652513629,
+          "max": 2.5578795480201566
+        },
+        {
+          "n": 50,
+          "mean": 1.6263204838032013,
+          "std": 0.2814700006091868,
+          "min": 1.040306896974518,
+          "max": 2.5494117559347753
+        },
+        {
+          "n": 50,
+          "mean": 1.8626846976419795,
+          "std": 0.3555261758447831,
+          "min": 1.3118526185752553,
+          "max": 2.930731053564468
+        }
+      ]
+    },
+    "observation.interarrival_variance_by_event_type": {
+      "kind": "list",
+      "length": 4,
+      "elements": [
+        {
+          "n": 50,
+          "mean": 3.3689714235104384,
+          "std": 1.4986871237386676,
+          "min": 1.4880458664464526,
+          "max": 7.79452371642865
+        },
+        {
+          "n": 50,
+          "mean": 2.543053210602906,
+          "std": 1.0695830614133768,
+          "min": 1.3641785658526584,
+          "max": 7.12340998285911
+        },
+        {
+          "n": 50,
+          "mean": 3.0242795224658363,
+          "std": 1.7245485589712088,
+          "min": 0.962260548712552,
+          "max": 10.408641469380084
+        },
+        {
+          "n": 50,
+          "mean": 3.712419605126984,
+          "std": 2.222193993905281,
+          "min": 1.2825237405562415,
+          "max": 12.788440338139694
+        }
+      ]
+    },
+    "observation.final_bid_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": -5.04,
+      "std": 5.973139877819705,
+      "min": -24.0,
+      "max": 7.0
+    },
+    "observation.final_ask_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 6.36,
+      "std": 6.88116269245249,
+      "min": -5.0,
+      "max": 25.0
+    },
+    "observation.final_mid_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.66,
+      "std": 5.183087882720107,
+      "min": -8.5,
+      "max": 14.5
+    },
+    "observation.final_spread_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 11.4,
+      "std": 7.655063683601855,
+      "min": 1.0,
+      "max": 31.0
+    },
+    "observation.spread_mean_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 8.375782943929357,
+      "std": 4.402658294670146,
+      "min": 2.4766355140186915,
+      "max": 22.666666666666668
+    },
+    "observation.spread_median_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 8.24,
+      "std": 4.887985270026905,
+      "min": 2.0,
+      "max": 24.0
+    },
+    "observation.spread_p90_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 13.954,
+      "std": 6.6230569980938565,
+      "min": 4.0,
+      "max": 33.0
+    },
+    "observation.spread_p99_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 16.315399999999997,
+      "std": 6.878480998011116,
+      "min": 6.0,
+      "max": 36.0
+    },
+    "observation.spread_max_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 17.0,
+      "std": 6.948381106416083,
+      "min": 7.0,
+      "max": 37.0
+    },
+    "observation.min_spread_ticks": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "endogeneity.spectral_radius": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.19999999999999993,
+      "std": 2.7755575615628914e-17,
+      "min": 0.19999999999999996,
+      "max": 0.19999999999999996
+    },
+    "endogeneity.total_baseline_rate": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "endogeneity.rate_based_proxy": {
+      "kind": "scalar",
+      "n": 50,
+      "mean": 0.1717297825567701,
+      "std": 0.10139814491974036,
+      "min": -0.08108108108108092,
+      "max": 0.36842105263157887
+    }
+  },
+  "skipped_fields": {
+    "summary_schema_version": "non-numeric scalar (string)",
+    "meta_order.time_fraction_by_window": "list fields are empty",
+    "observation.present": "non-numeric scalar (bool)",
+    "observation.crossing_policy": "non-numeric scalar (string)",
+    "endogeneity.kernel_family": "non-numeric scalar (string)",
+    "endogeneity.notes": "list fields are empty"
+  }
+}

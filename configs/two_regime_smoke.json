@@ -1,0 +1,123 @@
+{
+  "__simulator_config_version__": "0.1.0",
+  "dimension": 4,
+  "horizon": 600.0,
+  "seed": 20260423,
+  "kernel_family": {
+    "__enum__": "KernelFamily",
+    "value": 0
+  },
+  "kernel_params": {
+    "alpha": {
+      "__ndarray__": true,
+      "dtype": "float64",
+      "data": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    "beta": {
+      "__ndarray__": true,
+      "dtype": "float64",
+      "data": [
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  },
+  "baseline": {
+    "mu": {
+      "__ndarray__": true,
+      "dtype": "float64",
+      "data": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        [
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      ]
+    }
+  },
+  "latent_regime": {
+    "num_regimes": 2,
+    "transition_rates": {
+      "__ndarray__": true,
+      "dtype": "float64",
+      "data": [
+        [
+          -0.1,
+          0.1
+        ],
+        [
+          0.2,
+          -0.2
+        ]
+      ]
+    },
+    "initial_regime": 0
+  },
+  "meta_order": {
+    "windows": {
+      "__tuple__": true,
+      "items": []
+    }
+  },
+  "numerics": {
+    "truncation_window": 500.0,
+    "spectral_radius_cap": 0.95,
+    "upper_bound_safety": 1.1,
+    "use_exp_approximation": true
+  },
+  "version": "0.1.0"
+}

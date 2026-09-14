@@ -1,0 +1,29 @@
+{
+  "preferred_model": "SumExpHawkes_4type_R4",
+  "primary_day_2021_07_20": {
+    "rho_spec": 0.9876654198004231,
+    "n_events": 97952,
+    "log_likelihood": -66715.3781583396,
+    "AIC": 133566.7563166792,
+    "BIC": 134212.22814991788,
+    "fit_window_seconds": 86400.0,
+    "fit_window_description": "single UTC day, 2021-07-20, 86,400 s"
+  },
+  "day_2021_07_19": {
+    "rho_spec": 0.9432091776643319,
+    "n_events": 104734,
+    "log_likelihood": -63901.50073318152,
+    "fit_window_seconds": 86400.0,
+    "fit_window_description": "single UTC day, 2021-07-19, 86,400 s (robustness)"
+  },
+  "betas_grid_per_s": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "data_window": "2021-07 -- 2022-07 EURUSD HistData (13 monthly CSVs); fits restricted to one UTC day each",
+  "primary_date": "2021-07-20",
+  "secondary_date": "2021-07-19",
+  "source_csv": "<external-data>/EURUSD/layer1/layer1_models_summary.csv"
+}

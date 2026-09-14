@@ -1,0 +1,10 @@
+{
+  "overall_status": "fail",
+  "status_counts": {
+    "pass": 2,
+    "warn": 5,
+    "fail": 2,
+    "missing": 0,
+    "unchecked": 0
+  }
+}

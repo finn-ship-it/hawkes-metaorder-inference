@@ -1,0 +1,79 @@
+{
+  "model": "field_mean = a * N_obs^b",
+  "horizons": [
+    30.0,
+    60.0,
+    120.0
+  ],
+  "n_seeds_per_horizon": 5,
+  "fits": {
+    "observation.spread_mean_ticks": {
+      "a": 1.1635438522963073,
+      "b": 0.40503576321817714,
+      "r2": 0.9819540438570051,
+      "n": 3
+    },
+    "observation.spread_median_ticks": {
+      "a": 1.009553925049871,
+      "b": 0.43373495301459547,
+      "r2": 0.9962402971256671,
+      "n": 3
+    },
+    "observation.spread_p90_ticks": {
+      "a": 1.9550773176039618,
+      "b": 0.39813435200782193,
+      "r2": 0.9748191770524537,
+      "n": 3
+    },
+    "observation.spread_p99_ticks": {
+      "a": 2.0211440586005893,
+      "b": 0.4226229906949216,
+      "r2": 0.9750641009264606,
+      "n": 3
+    },
+    "observation.spread_max_ticks": {
+      "a": 1.963200129295186,
+      "b": 0.4361210873153618,
+      "r2": 0.9758905361150626,
+      "n": 3
+    },
+    "observation.final_spread_ticks": {
+      "a": 1.7349652231402117,
+      "b": 0.3819214142454195,
+      "r2": 0.9242990238560612,
+      "n": 3
+    }
+  },
+  "rows": [
+    {
+      "T": 30.0,
+      "N_obs_mean": 66.56666666666666,
+      "spread_mean_ticks": 6.225748793626573,
+      "spread_median_ticks": 6.166666666666667,
+      "spread_p90_ticks": 10.123333333333333,
+      "spread_p99_ticks": 11.580999999999998,
+      "spread_max_ticks": 11.9,
+      "final_spread_ticks": 8.233333333333333
+    },
+    {
+      "T": 60.0,
+      "N_obs_mean": 137.4,
+      "spread_mean_ticks": 8.949454593450204,
+      "spread_median_ticks": 8.733333333333333,
+      "spread_p90_ticks": 14.646666666666668,
+      "spread_p99_ticks": 17.133333333333333,
+      "spread_max_ticks": 17.8,
+      "final_spread_ticks": 12.466666666666667
+    },
+    {
+      "T": 120.0,
+      "N_obs_mean": 285.6333333333333,
+      "spread_mean_ticks": 11.233001957856512,
+      "spread_median_ticks": 11.6,
+      "spread_p90_ticks": 18.083333333333332,
+      "spread_p99_ticks": 21.43866666666667,
+      "spread_max_ticks": 22.466666666666665,
+      "final_spread_ticks": 14.366666666666667
+    }
+  ]
+}

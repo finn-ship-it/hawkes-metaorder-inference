@@ -1,0 +1,134 @@
+{
+  "preferred_model": "Layer1EM_SumExp_4type_R4",
+  "kernel_family": "EXPONENTIAL_SUM",
+  "betas_grid_per_s": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "data_window": "2021-07-20 (primary), 2021-07-19 (robustness); EURUSD HistData; single UTC day each, T=86,400 s; random_ms jitter, seed 20210720",
+  "primary_date": "2021-07-20",
+  "secondary_date": "2021-07-19",
+  "anchor_lbfgsb_csv": "Data/Data output/EURUSD output/layer1/layer1_models_summary.csv",
+  "primary_day_2021_07_20": {
+    "date": "2021-07-20",
+    "n_events": 97952,
+    "fit_window_seconds": 86400.0,
+    "betas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "lbfgsb_warm_start": {
+      "rho_spec": 0.9876654198004231,
+      "log_likelihood": -66715.3781583396,
+      "converged": false,
+      "source_file": "<external-data>/EURUSD/layer1/layer1_params_sumexp_4type.json"
+    },
+    "em_result": {
+      "rho_spec": 0.937308200001031,
+      "log_likelihood": -64922.718170694534,
+      "n_iter": 516,
+      "converged": true,
+      "converged_reason": "tol",
+      "rho_cap": 0.99,
+      "projection_count": 4,
+      "ll_improvement_over_lbfgsb": 1792.659987645071,
+      "wall_clock_seconds": 317.16234016418457,
+      "mu": [
+        0.018322322750060058,
+        0.015316311006796675,
+        0.018549627953530785,
+        0.018731255905091164
+      ],
+      "branching_matrix": [
+        [
+          0.06673460249852323,
+          0.2501697478183492,
+          0.5667222081378909,
+          0.010050785121649544
+        ],
+        [
+          0.2659892724351182,
+          0.03201396066267368,
+          0.015808013864963808,
+          0.6674280891727815
+        ],
+        [
+          0.6868565253290592,
+          0.013686710897394731,
+          0.011368437401976962,
+          0.2504735889263881
+        ],
+        [
+          0.009778551098921184,
+          0.573205997204203,
+          0.2611710167854787,
+          0.0738161979529125
+        ]
+      ]
+    }
+  },
+  "day_2021_07_19": {
+    "date": "2021-07-19",
+    "n_events": 104734,
+    "fit_window_seconds": 86400.0,
+    "betas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "lbfgsb_warm_start": {
+      "rho_spec": 0.9432091776643319,
+      "log_likelihood": -63901.50073318152,
+      "converged": false,
+      "source_file": "<external-data>/EURUSD/layer1/layer1_params_sumexp_4type_day_2021-07-19.json"
+    },
+    "em_result": {
+      "rho_spec": 0.9486238691092594,
+      "log_likelihood": -61388.58305874924,
+      "n_iter": 568,
+      "converged": true,
+      "converged_reason": "tol",
+      "rho_cap": 0.99,
+      "projection_count": 6,
+      "ll_improvement_over_lbfgsb": 2512.917674432283,
+      "wall_clock_seconds": 375.09900999069214,
+      "mu": [
+        0.014165812843840976,
+        0.015071182755545911,
+        0.015447255052989457,
+        0.017544180983558606
+      ],
+      "branching_matrix": [
+        [
+          0.041778903470165614,
+          0.26419209229113894,
+          0.6000230905587941,
+          0.008059398819605452
+        ],
+        [
+          0.2855064860010978,
+          0.008721388622040447,
+          0.013255762891068628,
+          0.6705182200770292
+        ],
+        [
+          0.6667530273790483,
+          0.013609532732185008,
+          0.021725957954570566,
+          0.28534037279147245
+        ],
+        [
+          0.007509222651916062,
+          0.5907157048978549,
+          0.27553635720516784,
+          0.045141677345151024
+        ]
+      ]
+    }
+  }
+}
